@@ -1,0 +1,12 @@
+{
+  "name": "car-rental",
+  "packageManager": "yarn@3.2.1",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./resources/build/index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT"
+
+}
