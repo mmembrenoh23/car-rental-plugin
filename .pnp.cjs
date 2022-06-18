@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["wordpress", "npm:1.4.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -41,9 +42,49 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["car-rental", "workspace:."]\
+            ["car-rental", "workspace:."],\
+            ["wordpress", "npm:1.4.1"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["sax", [\
+        ["npm:1.2.4", {\
+          "packageLocation": "./.yarn/cache/sax-npm-1.2.4-178f05f12f-d3df7d32b8.zip/node_modules/sax/",\
+          "packageDependencies": [\
+            ["sax", "npm:1.2.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["wordpress", [\
+        ["npm:1.4.1", {\
+          "packageLocation": "./.yarn/cache/wordpress-npm-1.4.1-68d9c79a39-60e628ea06.zip/node_modules/wordpress/",\
+          "packageDependencies": [\
+            ["wordpress", "npm:1.4.1"],\
+            ["xmlrpc", "npm:1.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["xmlbuilder", [\
+        ["npm:8.2.2", {\
+          "packageLocation": "./.yarn/cache/xmlbuilder-npm-8.2.2-8c80bfd51d-6e07fcee91.zip/node_modules/xmlbuilder/",\
+          "packageDependencies": [\
+            ["xmlbuilder", "npm:8.2.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["xmlrpc", [\
+        ["npm:1.3.2", {\
+          "packageLocation": "./.yarn/cache/xmlrpc-npm-1.3.2-378fb632b7-c997d86ad2.zip/node_modules/xmlrpc/",\
+          "packageDependencies": [\
+            ["xmlrpc", "npm:1.3.2"],\
+            ["sax", "npm:1.2.4"],\
+            ["xmlbuilder", "npm:8.2.2"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]]\
     ]\

@@ -10,4 +10,13 @@
  * Text Domain: car-rental
  */
 
- 
+define( 'CAR_RENTAL_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+define( 'CAR_RENTAL_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+
+include CAR_RENTAL_PLUGIN_PATH."includes/load-admin.php";
+
+$car_rental = new Car_Rental_Admin();
+$car_rental::init();
+register_activation_hook( __FILE__, array( 'Car_Rental_Admin', 'activate' ) );
+register_deactivation_hook( __FILE__, array( 'Car_Rental_Admin', 'deactivate' ) );
+

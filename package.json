@@ -5,8 +5,15 @@
   "private": true,
   "main": "./resources/build/index.js",
   "scripts": {
-    "start": "node server.js"
+    "build": "wp-scripts build",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "start": "wp-scripts start",
+    "packages-update": "wp-scripts packages-update"
   },
-  "license": "MIT"
-
+  "license": "MIT",
+  "dependencies": {
+    "wordpress": "^1.4.1"
+  }
 }
